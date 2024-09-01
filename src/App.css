@@ -1,0 +1,15 @@
+/* navbar 배경색 설정 */
+.bg-black {
+    background-color: #000000 !important;
+  }
+  
+  /* search input 배경색 설정 */
+  .search-input {
+    background-color: #343a40 !important;
+    color: #ffffff !important;
+}
+
+/* 플레이스홀더 텍스트 색상 */
+.search-input::placeholder {
+    color: #ffffff !important; 
+}
