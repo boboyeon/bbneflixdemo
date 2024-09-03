@@ -1,3 +1,8 @@
+body {
+  background-color: #000 !important;
+  color: #ffffff !important;
+}
+
 /* navbar 배경색 설정 */
 .bg-black {
     background-color: #000000 !important;
