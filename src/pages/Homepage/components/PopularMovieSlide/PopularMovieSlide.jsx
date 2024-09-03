@@ -5,19 +5,21 @@ import "react-multi-carousel/lib/styles.css";
 import Spinner from "react-bootstrap/Spinner";
 import Alert from "react-bootstrap/Alert";
 import MovieCard from "../MovieCard/MovieCard";
+import "./PopularMovieSlide.style.css";
 
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 8,
+    items: 6,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2,
+    items: 3,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
+    partialVisibilityGutter: 80,
   },
 };
 
@@ -51,7 +53,7 @@ const PopularMovieSlide = () => {
   }
 
   return (
-    <div>
+    <div className="slide-title">
       <h3>Popular Movies</h3>
       <Carousel
         responsive={responsive}
@@ -59,6 +61,7 @@ const PopularMovieSlide = () => {
         infinite={true}
         containerClass="carousel-container"
         itemClass="movie-slider p-1"
+        // partialVisible={true}
       >
         {data.results.map((movie, index) => (
           <MovieCard movie={movie} key={index} />
