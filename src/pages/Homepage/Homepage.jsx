@@ -1,7 +1,8 @@
 import React from 'react'
 import Banner from './components/Banner/Banner'
 import PopularMovieSlide from './components/PopularMovieSlide/PopularMovieSlide'
-
+import TopRatedMovie from './components/TopRatedMovie/TopRatedMovie'
+import UpcomingMovie from './components/UpcomingMovie/UpcomingMovie'
 // 1. 배너 -> popular movie의 첫번째 아이템 보여주기
 // 2. popular movie
 // 3. top rated movie
@@ -12,7 +13,8 @@ const Homepage = () => {
     <div>
       <Banner />
       <PopularMovieSlide/>
-      <TopRatedMovieSlide/>
+      <TopRatedMovie/>
+      <UpcomingMovie/>
     </div>
   )
 }

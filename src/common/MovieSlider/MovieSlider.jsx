@@ -1,9 +1,13 @@
 import React from "react";
 import "./MovieSlider.style.css";
+import Carousel from 'react-multi-carousel';
+import "react-multi-carousel/lib/styles.css";
+import MovieCard from "../MovieCard/MovieCard";
 
-const MovieSlider = () => {
-  return <div className="slide-title">
-    <h3>Popular Movies</h3>
+const MovieSlider = ({ title, movies, responsive }) => {
+  return (
+    <div className="slide-title">
+      <h3>{title}</h3>
       <Carousel
         responsive={responsive}
         centerMode={true}
@@ -12,11 +16,12 @@ const MovieSlider = () => {
         itemClass="movie-slider p-1"
         // partialVisible={true}
       >
-        {data.results.map((movie, index) => (
+        {movies.map((movie, index) => (
           <MovieCard movie={movie} key={index} />
         ))}
       </Carousel>
-  </div>;
+    </div>
+  );
 };
 
 export default MovieSlider;
