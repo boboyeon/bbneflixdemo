@@ -4,7 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Spinner from "react-bootstrap/Spinner";
 import Alert from "react-bootstrap/Alert";
-import MovieCard from "../MovieCard/MovieCard";
+import MovieCard from "../../../../common/MovieCard/MovieCard";
 import "./PopularMovieSlide.style.css";
 
 const responsive = {
@@ -54,19 +54,7 @@ const PopularMovieSlide = () => {
 
   return (
     <div className="slide-title">
-      <h3>Popular Movies</h3>
-      <Carousel
-        responsive={responsive}
-        centerMode={true}
-        infinite={true}
-        containerClass="carousel-container"
-        itemClass="movie-slider p-1"
-        // partialVisible={true}
-      >
-        {data.results.map((movie, index) => (
-          <MovieCard movie={movie} key={index} />
-        ))}
-      </Carousel>
+      
     </div>
   );
 };

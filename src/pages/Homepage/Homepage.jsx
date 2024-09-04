@@ -12,6 +12,7 @@ const Homepage = () => {
     <div>
       <Banner />
       <PopularMovieSlide/>
+      <TopRatedMovieSlide/>
     </div>
   )
 }
