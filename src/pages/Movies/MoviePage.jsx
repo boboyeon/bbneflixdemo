@@ -13,7 +13,6 @@ const MoviePage = () => {
   const [selectedGenre, setSelectedGenre] = useState(null);
   const keyword = query.get("q");
 
- 
   const { data, isLoading, isError, error } = useSearchMovieQuery({
     keyword,
     page,
@@ -25,13 +24,16 @@ const MoviePage = () => {
   };
 
   const handleFilterChange = (genreId) => {
-    setSelectedGenre(genreId); 
+    setSelectedGenre(genreId);
     setPage(1);
   };
 
   if (isLoading) {
     return (
-      <div className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
+      <div
+        className="d-flex justify-content-center align-items-center"
+        style={{ height: "100vh" }}
+      >
         <Spinner animation="border" role="status">
           <span className="visually-hidden">Loading...</span>
         </Spinner>
@@ -41,7 +43,10 @@ const MoviePage = () => {
 
   if (isError) {
     return (
-      <div className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
+      <div
+        className="d-flex justify-content-center align-items-center"
+        style={{ height: "100vh" }}
+      >
         <Alert variant="danger">
           <p>{error.message}</p>
         </Alert>

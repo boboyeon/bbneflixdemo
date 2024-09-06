@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Dropdown, DropdownButton } from "react-bootstrap";
 import { useMovieGenreQuery } from "../../hooks/useMovieGenre";
-import "./GenreFilter.style.css"
+import "./GenreFilter.style.css";
 
 const GenreFilter = ({ onFilterChange }) => {
   const { data: genres } = useMovieGenreQuery();

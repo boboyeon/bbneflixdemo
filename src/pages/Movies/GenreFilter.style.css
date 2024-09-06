@@ -1,22 +1,22 @@
-
 .genre-dropdown .dropdown-toggle {
-    background-color: #343a40 !important;
-    color: white;
-    border: none;
-  }
+  background-color: #343a40 !important;
+  color: white;
+  border: none;
+  margin: 2em;
+}
 
-  .genre-dropdown .dropdown-toggle:hover {
-    background-color: red !important;
-  }
-  
-  .genre-dropdown .dropdown-menu {
-    background-color: #343a40!important;
-  }
-  
-  .genre-dropdown .dropdown-item {
-    color: white!important;
-  }
-  
-  .genre-dropdown .dropdown-item:hover {
-    background-color: red !important; 
-  }
+.genre-dropdown .dropdown-toggle:hover {
+  background-color: red !important;
+}
+
+.genre-dropdown .dropdown-menu {
+  background-color: #343a40 !important;
+}
+
+.genre-dropdown .dropdown-item {
+  color: white !important;
+}
+
+.genre-dropdown .dropdown-item:hover {
+  background-color: red !important;
+}
