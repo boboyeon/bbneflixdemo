@@ -1,0 +1,70 @@
+/* 페이지 항목 */
+.page-item {
+    margin: 0 1px;
+}
+
+.page-link {
+    color: #fff!important;
+    background-color: transparent!important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    padding: 8px 12px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none !important;
+}
+
+.page-link:hover {
+    background-color: #e9ecef !important;
+    color: #000 !important;
+}
+
+/* 현재 활성화 페이지 */
+.active .page-link {
+    background-color: red !important;
+    color: white !important;
+}
+
+/* <과 > 버튼 */
+.previous-link, .next-link {
+    color: #fff!important;
+    padding: 8px 12px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+
+}
+
+.previous-link:hover, .next-link:hover {
+    color: #000!important;
+    background-color: #dee2e6 !important;
+    text-decoration: none !important;
+}
+
+/* 전체 위, 아래 여백 */
+.pagination {
+    margin-top: 4em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .movie-card {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+
+
+
+  .genre-filter {
+    margin-bottom: 20px;  /* 필터와 영화 목록 사이의 간격 */
+  }
+  
